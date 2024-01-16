@@ -1,0 +1,30 @@
+/* footer */
+footer{
+    background-color: var(--main-blue);
+    border-top: 1px solid black;
+}
+
+.footer-left{
+    width: 50%;
+    text-align: center;
+}
+
+.footer-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-right .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+.copy-right{
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+.container{
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    background-color: #e1f1f2;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-shadow: none;
+    }
+
+input[type=submit]:hover {
+    background: #2cbbc3;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}

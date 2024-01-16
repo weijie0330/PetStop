@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+    <!-- css file-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/addpost.css">
+    <link rel="stylesheet" href="styles/footer.css">
+<%- include('partials/navbar.ejs') %>
+
+
+
+<div class="container">
+    <h1>Add Post</h1>
+    
+    <form class="addpost-form" action="/addpost/submit" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+    
+        <label for="postTitle">Title:</label><br>
+        <input type="text" id="postTitle" name="postTitle"><br>
+    
+        <label for="postContent">Content:</label><br>
+        <textarea id="message" name="postContent"></textarea><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

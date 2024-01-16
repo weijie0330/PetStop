@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+    <!-- css file-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/addpost.css">
+    <link rel="stylesheet" href="styles/footer.css">
+<%- include('partials/navbar.ejs') %>
+
+
+<div class="container">
+    <h1>Update Post</h1>
+    
+    
+    <form class="updatepost-form" action="/updatepost/submit" method="POST">
+        <h3>Enter the post title that you wish to edit:</h3>
+        <label for="postTitle">Title:</label><br>
+        <input type="text" id="postTitle" name="postTitle"><br>
+    
+        <h3>Update the content for the post</h3>
+        <label for="postContent">Content:</label><br>
+        <textarea id="message" name="postContent"></textarea><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+    <!-- css file-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/faq.css">
+    <link rel="stylesheet" href="styles/footer.css">
+<%- include('partials/navbar.ejs') %>
+
+<!-- Your code -->
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <% for (var i=0; i < faqData.length; i++){ %>
+        <div>
+            <h3>
+                <%= faqData[i].question %>
+            </h3>
+            <p>
+                <%= faqData[i].answer %>
+            </p>
+        </div>
+    <% } %>
+</div>
+
+
+
+<%- include('partials/footer.ejs') %>
+</body>
+</html>

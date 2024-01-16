@@ -1,0 +1,52 @@
+<%- include('partials/header.ejs') %>
+    <!-- css file-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+<%- include('partials/navbar.ejs') %>
+
+    <div>
+        <img class="top-image" src="images/loveDog.png" alt="A lady hugging two dogs">
+    </div>
+
+    <div class="row container">
+        <div class="column left-column">
+            <div class="manipulation">
+                <button type="button" class="postList">List of Posts</button>
+                    <ul class="postListContainer">
+                        <% for (var i=0; i < data.length; i++){ %>
+
+                            <!-- Save the data in attribute to allow retrieve outside of for loop -->
+                            <li class="postListItem"
+                                date = "<%= data[i].date %>"
+                                name = "<%= data[i].name %>"
+                                postContent = "<%= data[i].postContent %>" >
+                                <%= data[i].postTitle %>
+                            </li>
+                        <% } %>
+                    </ul>
+
+
+
+                <a href="/addpost"><button type="button">Add Post</button></a>
+                <a href="/updatepost"><button type="button">Update Post</button></a>
+                <a href="/deletepost"><button type="button">Delete Post</button></a>
+            </div>
+        </div>
+        <div class="column right-column">
+
+            <div class="post-content">
+                <div class="post-title"><h2 class="title"></h2></div>
+                <div class="post-info"><p class="info"></p></div>
+                <div class="post-content"><p class="content"></p></div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer.ejs') %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/postList.js"></script>
+    
+</body>
+</html>

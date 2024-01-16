@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+    <!-- css file-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/Contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+<%- include('partials/navbar.ejs') %>
+
+
+
+<div class="container">
+    <h1>Contact Us</h1>
+    
+    <form class="contact-form" action="/contact/submit" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+    
+        <label for="email">E-mail:</label><br>
+        <input type="text" id="email" name="email"><br>
+    
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>
